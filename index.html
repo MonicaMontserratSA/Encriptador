@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Encriptador mágico</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap");
+    </style>
+    <script src="funcion.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="titulo">
+        <h1>
+          <img class="gato" src="imgs/gato.png" />
+          <p>Encriptador mágico</p>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <div class="paraEncriptar">
+          <input
+            id="encripta"
+            type="text"
+            placeholder="Ingresa el texto aquí" />
+        </div>
+
+        <div class="resultado">
+          <div id="libro">
+            <img class="libro" src="imgs/libro.png" />
+          </div>
+          <p id="result">Aquí verás la magia</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <img src="imgs/exclamation.svg" alt="" />
+        <p>Solo letras minúsculas y sin acentos</p>
+
+        <img src="imgs/exclamation.svg" alt="" />
+        <p>Recarga la página para volver a usar</p>
+      </div>
+
+      <div class="contenedor-botones">
+        <button class="btn10" onclick="encriptaTexto(); borrarLibro();">Encriptar</button>
+        <button class="btn10" onclick="desencriptaTexto(); borrarLibro();">Desencriptar</button>
+        <button class="btn10" id="copiar" onclick="copiarTexto();">Copiar</button>
+      </div>
+    </main>
+
+    <footer class="final">
+      <a
+        href="https://www.linkedin.com/in/m%C3%B3nica-montserrat-sauza-arregu%C3%ADn-65174727b/"
+        ><img src="imgs/linkedin.svg" alt="linkedin"
+      /></a>
+      <a href="#"><img src="imgs/github.svg" alt="github" /></a>
+
+      <p class="copyright">Proyecto desarrollado por Mónica Sauza - 2024</p>
+      <p>
+        <a
+          href="https://www.freepik.es/foto-gratis/fondo-imagen-brillo-patron-cielo-estrellado-purpura_15663033.htm#query=aesthetic%20magic&position=13&from_view=search&track=ais&uuid=9e7ebaae-96d0-4e37-adab-a9f6c6380d03"
+          >Imagen de rawpixel.com</a
+        >
+        en Freepik
+      </p>
+      <p>
+        <a
+          href="https://www.flaticon.es/iconos-gratis/magia"
+          title="magia iconos"
+          >Magia iconos creados por smalllikeart - Flaticon</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.flaticon.es/iconos-gratis/lindo"
+          title="lindo iconos"
+          >Lindo iconos creados por Freepik - Flaticon</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
